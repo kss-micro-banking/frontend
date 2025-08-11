@@ -10,7 +10,7 @@ COPY . /app/
 COPY --from=installer /app/node_modules /app/node_modules
 WORKDIR /app
 
-ARG VITE_BACKEND_URL
+ARG VITE_API_URL
 
 RUN pnpm run build
 
